@@ -18,8 +18,9 @@ Do the following:
    2. Console log true if age is 18 or higher
 
    HINT: no function required
-*/
-
+*/ 
+let votingAge = 26;
+console.log(votingAge >= 18);
 
 
 /*
@@ -31,7 +32,16 @@ Do the following:
    3. Console log the new value of the 1st variable
 
    HINT: no function required
-*/
+*/ 
+let z= 3;
+let y = 6;
+if( y >=6){
+  z = z * y
+}
+
+console.log(z);
+  
+
 
 
 
@@ -47,6 +57,9 @@ Do the following:
 
    HINT: look up the Number method
 */
+let x = Number ("1999");
+console.log(x);
+
 
 
 
@@ -60,10 +73,10 @@ Do the following:
    3. Multiply a and b and return the answer
 */
 
-function multiply(/*add your code here*/){
-  /*add your code here*/
+function multiply(a, b){
+  return a * b;
 }
-
+console.log(multiply(3,4));
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/

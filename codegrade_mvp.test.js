@@ -7,7 +7,7 @@ describe('fooFunction', ()=>{
 });
 
 describe('multiplyFunction', ()=>{
-    it('a * b', ()=>{
+    it('it correctly multiplies two numbers', ()=>{
         expect(functions.multiply(5, 7)).toBe(35);
     })
 });

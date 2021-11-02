@@ -133,12 +133,12 @@ return weight * 0.04;
   return weight * 0.03;
 }else if (age >= 1 && weight > 15){
   return weight * 0.02;
-}else if ( age < 1 ){
-  return weight * 0.10;
-}else if (age <  0.333 && age <= 0.583){
-  return weight * 0.05;
-}else if (age < 0.583){
+}else if ( age < 1 && age >= 0.583){
   return weight * 0.04;
+}else if (age <  0.583 && age >= 0.333){
+  return weight * 0.05;
+}else if (age < 0.333){
+  return weight * 0.1;
 }
 }
 console.log(hungryDog(15,1));
@@ -185,19 +185,19 @@ function game(user,computer){
   } else if(user === 'rock' && computer ==='paper'){
   return 'you lose!';
   } else if ( user === 'rock' && computer === 'rock'){
-    return 'it`s a tie';
+    return 'it\'s a tie';
   }else if (user === 'paper'&& computer === 'rock'){
     return 'you win!';
   }else if (user === 'paper' && computer==='scissors'){
     return 'you lose!';
   } else if (user==='paper' && computer==='paper'){
-    return 'it`s a tie';
+    return 'it\'s a tie';
   }else if(user==='scissors' && computer==='paper'){
     return 'you win!';
   }else if(user==='scissors'&& computer==='rock'){
     return 'you lose!';
   }else if(user==='scissors' && computer==='scissors'){
-    return 'it`s a tie';
+    return 'it\'s a tie';
   }
 
 }
@@ -248,7 +248,7 @@ Using the annoyingSong function below do the following:
 */
 
 function annoyingSong(number){
-      return `"${number} bottles of soda on the wall, ${number} bottles of soda, take one down pass it around ${number - 1} bottles of soda on the wall"`;
+      return `${number} bottles of soda on the wall, ${number} bottles of soda, take one down pass it around ${number - 1} bottles of soda on the wall`;
 }
 console.log(annoyingSong(99));
 
@@ -269,14 +269,14 @@ Using the grade function below do the following:
 
 function grade(score){
   if (score >=90 && score<=100 ){
-    return 'you gon an A';
+    return 'you got an A';
   } else if (score >=80 && score <= 89){
     return 'you got a B';
   } else if (score >=70 && score <=79){
     return 'you got a C';
-  }else if (score <=60 && score <=69){
+  }else if (score >=60 && score <=69){
     return 'you got a D'
-  }else if (score < 69){
+  }else if (score < 60){
     return 'you got an F'
   }
 
@@ -298,7 +298,7 @@ HINT - try looking up the .includes() method
 */
 
 
-function vowelCounter(/*add your code here*/) {
+function vowelCounter() {
   /*add your code here*/
 }
 
